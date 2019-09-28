@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 //rmfotjdkfjdkjf
 class CarViewController: UIViewController {
+    //넵ㅎ
     
     var addtext : String!
     //첫번째 상자
@@ -115,6 +116,11 @@ class CarViewController: UIViewController {
         let alertController = UIAlertController(title: nil, message: "등록 1년 미만 차량은 서울시 자동차 평균주행거리로 계산됩니다.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+          self.view.endEditing(true)
+
     }
     
 

@@ -30,7 +30,7 @@ class miseViewController : UIViewController, XMLParserDelegate, UIPickerViewData
     var MiseInfoArr = Array<Mise>()
     //구번호 저장하는 변수
     var gunumber = ""
-    var guPickerData : [String] = ["강남구", "강동구", "강서구", "강북구", "관악구", "광진구", "구로구", "금천구", "노원구", "동대문구", "도봉구", "동장구", "마포구", "서대문구", "성동구", "성북구", "서초구", "송파구", "영등포구", "용산구", "양천구", "은평구", "종로구", "중구", "중랑구"]
+    var guPickerData : [String] = ["강남구", "강동구", "강서구", "강북구", "관악구", "광진구", "구로구", "금천구", "노원구", "동대문구", "도봉구", "동작구", "마포구", "서대문구", "성동구", "성북구", "서초구", "송파구", "영등포구", "용산구", "양천구", "은평구", "종로구", "중구", "중랑구"]
     
     override func viewDidLoad() {
         

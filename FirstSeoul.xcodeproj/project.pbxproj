@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -117,7 +117,6 @@
 				B90803EC3234592B612C5143 /* Pods-FirstSeoulTests.debug.xcconfig */,
 				74010C5BE9CC50E03C4FE8AE /* Pods-FirstSeoulTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -620,13 +619,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68MGM2TU44;
+				DEVELOPMENT_TEAM = DUQE66MABG;
 				INFOPLIST_FILE = FirstSeoul/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FirstSeoul;
+				PRODUCT_BUNDLE_IDENTIFIER = dgdddfg.FirstSeoul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -640,13 +639,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68MGM2TU44;
+				DEVELOPMENT_TEAM = DUQE66MABG;
 				INFOPLIST_FILE = FirstSeoul/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FirstSeoul;
+				PRODUCT_BUNDLE_IDENTIFIER = dgdddfg.FirstSeoul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

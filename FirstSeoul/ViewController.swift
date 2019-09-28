@@ -54,6 +54,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
         //self.present(alertController, animated: true, completion: nil)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+          self.view.endEditing(true)
+
+    }
     
     
     
