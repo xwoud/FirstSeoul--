@@ -203,8 +203,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ne-dz-yFd" customClass="MBCircularProgressBarView">
                                 <rect key="frame" x="60" y="86" width="255" height="168"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UE-NA-kHb">
-                                        <rect key="frame" x="54" y="100" width="11.5" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UE-NA-kHb">
+                                        <rect key="frame" x="46" y="100" width="11.5" height="20"/>
                                         <fontDescription key="fontDescription" name="InterGTM" family="InterparkGothic" pointSize="20"/>
                                         <color key="textColor" red="0.50277283031088082" green="0.50277283031088082" blue="0.50277283031088082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@
                                     <constraint firstAttribute="bottom" secondItem="AsF-09-ZtQ" secondAttribute="bottom" constant="48" id="svH-PM-yZq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value=" KM"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value=" (백만)KM "/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
@@ -240,7 +240,7 @@
                                         <real key="value" value="101"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
                                         <color key="value" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -255,10 +255,10 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
-                                        <real key="value" value="35"/>
+                                        <real key="value" value="26"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                         <color key="value" red="0.91209925518134716" green="0.32115315697703822" blue="0.28193426579737302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -421,7 +421,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-nt-MAo">
-                                        <rect key="frame" x="193.5" y="25" width="151.5" height="54"/>
+                                        <rect key="frame" x="120" y="25" width="225" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaN-jm-VBd">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="54"/>
@@ -429,8 +429,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dp-ps-Lk3">
-                                                <rect key="frame" x="109" y="0.0" width="42.5" height="54"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(백만)km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dp-ps-Lk3">
+                                                <rect key="frame" x="109" y="0.0" width="116" height="54"/>
                                                 <fontDescription key="fontDescription" name="InterGTB" family="InterparkGothic" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
