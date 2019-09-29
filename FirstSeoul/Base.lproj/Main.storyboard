@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2nr-od-c6x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mcD-dV-Tye">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Naf-RN-01D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="128"/>
+            <point key="canvasLocation" x="1654" y="-631"/>
         </scene>
         <!--계기판-->
         <scene sceneID="HbO-hv-bAi">
@@ -993,14 +993,16 @@
                                 </state>
                                 <connections>
                                     <action selector="SignUpClick:" destination="mcD-dV-Tye" eventType="touchUpInside" id="BJW-kN-4Ui"/>
+                                    <segue destination="2nr-od-c6x" kind="show" identifier="segNext" id="m1S-rj-tsw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-va-6hl">
-                                <rect key="frame" x="320.5" y="44" width="30" height="32"/>
+                                <rect key="frame" x="305.5" y="44" width="45" height="32"/>
                                 <fontDescription key="fontDescription" name="InterGTOTFL" family="InterparkGothicOTF" pointSize="17"/>
-                                <state key="normal" title="취소"/>
+                                <state key="normal" title="로그인"/>
                                 <connections>
                                     <action selector="touchUpCancleButton:" destination="mcD-dV-Tye" eventType="touchUpInside" id="Wsk-wk-8zu"/>
+                                    <segue destination="2nr-od-c6x" kind="show" id="Erg-Hz-5Er"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-jY-n2E">
@@ -1122,7 +1124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCf-ti-gKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="-560"/>
+            <point key="canvasLocation" x="778" y="-496"/>
         </scene>
     </scenes>
     <resources>
@@ -1141,4 +1143,7 @@
         <image name="selected_tabs" width="25" height="24"/>
         <image name="tree" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="m1S-rj-tsw"/>
+    </inferredMetricsTieBreakers>
 </document>

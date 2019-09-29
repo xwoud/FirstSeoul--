@@ -14,8 +14,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var idField: UITextField!
     @IBOutlet var pwField: UITextField!
-    var mile = 0
-    var maxmil = "연평균 주행거리"
+    var id : String = ""
+    var pw : String = ""
     
     
     override func viewDidLoad() {
@@ -26,6 +26,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
 
     @IBAction func login() {
+       
+        self.id = (UserDefaults.standard.value(forKey: "id") as? String)!
+        self.pw = (UserDefaults.standard.value(forKey: "pw") as? String)!
+        
         guard let idText = idField.text else {
             return
         }
@@ -33,14 +37,26 @@ class ViewController: UIViewController,UITextFieldDelegate {
         guard let pwText = pwField.text else {
             return
         }
-        
-        if idText == "" && pwText == "" {
+        if idText == self.id && pwText == self.pw
+        {
             successAlert()
+            print("성공")
+            print(idText)
+            print(pwText)
+        }
+        else if idText == "" && pwText == ""
+        {
+            print("없어서 실패")
+            print(idText)
+            print(pwText)
+            failedAlert()
             
         } else { // 형식은 지켰으나 정의해둔 id(email), password가 아닌 경우
+            print("틀려서 실패")
+            print(idText)
+            print(pwText)
             failedAlert()
-        }
-        
+            }
         
     }
     

@@ -17,6 +17,7 @@ class SignUp2Controller: UIViewController {
         @IBOutlet weak var pw1Text: UITextField! //비번
         @IBOutlet weak var pw2Text: UITextField! // 비번확인
         @IBOutlet weak var nameText: UITextField! // 이름
+    
         
         // 취소버튼
         @IBAction func touchUpCancleButton(_ sender: UIButton) {
@@ -67,9 +68,11 @@ class SignUp2Controller: UIViewController {
             // Do any additional setup after loading the view.
         }
     func okAlert() {
+        
+        UserDefaults.standard.set(idText.text, forKey : "id")
+        UserDefaults.standard.set(pw1Text.text, forKey : "pw")
         let alert = UIAlertController(title: "", message: "가입이 완료되었습니다 ^^", preferredStyle: .alert)
         let ok = UIAlertAction(title: "확인", style: .default) { (ok) in
-            self.presentingViewController?.dismiss(animated: true, completion: nil)
             // 확인 누르면 처음 페이지로 돌아가기
         }
         alert.addAction(ok)
