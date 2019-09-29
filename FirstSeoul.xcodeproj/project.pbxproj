@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3AB5BAB85DCDD950EB458C90 /* Pods_FirstSeoulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C879E8575249F40DCD998F72 /* Pods_FirstSeoulTests.framework */; };
+		3D06BA922340658800819614 /* SignUp2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06BA912340658800819614 /* SignUp2Controller.swift */; };
 		3D566C33233D06E700678700 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D566C32233D06E700678700 /* CarViewController.swift */; };
 		3D6475C2233B339E000237FF /* MileageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6475C1233B339E000237FF /* MileageController.swift */; };
 		3D6475C6233B6ADA000237FF /* Milege2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6475C5233B6ADA000237FF /* Milege2Controller.swift */; };
@@ -48,12 +49,13 @@
 /* Begin PBXFileReference section */
 		3329D733353E7DB2656B06A5 /* Pods_FirstSeoul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSeoul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C7E0083CB70F39F464A31D /* Pods_FirstSeoul_FirstSeoulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSeoul_FirstSeoulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D06BA912340658800819614 /* SignUp2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2Controller.swift; sourceTree = "<group>"; };
 		3D566C32233D06E700678700 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		3D6475C1233B339E000237FF /* MileageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageController.swift; sourceTree = "<group>"; };
 		3D6475C5233B6ADA000237FF /* Milege2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milege2Controller.swift; sourceTree = "<group>"; };
 		3D6475C7233C4036000237FF /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		3D6475D5233C7C56000237FF /* firstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstController.swift; sourceTree = "<group>"; };
-		3D6B509C2334A924009A3407 /* FirstSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6B509C2334A924009A3407 /* 미세 빵빵.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "미세 빵빵.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6B509F2334A924009A3407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D6B50A12334A924009A3407 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D6B50A42334A924009A3407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 		3D6B509D2334A924009A3407 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D6B509C2334A924009A3407 /* FirstSeoul.app */,
+				3D6B509C2334A924009A3407 /* 미세 빵빵.app */,
 				3D6B50B02334A926009A3407 /* FirstSeoulTests.xctest */,
 				3D6B50BB2334A926009A3407 /* FirstSeoulUITests.xctest */,
 			);
@@ -160,6 +162,7 @@
 				F8EDDEC0233CCA1B00E6819D /* Assets.xcassets */,
 				F8EDDEC4233CCD4300E6819D /* miseViewController.swift */,
 				3D566C32233D06E700678700 /* CarViewController.swift */,
+				3D06BA912340658800819614 /* SignUp2Controller.swift */,
 			);
 			path = FirstSeoul;
 			sourceTree = "<group>";
@@ -211,7 +214,7 @@
 			);
 			name = FirstSeoul;
 			productName = FirstSeoul;
-			productReference = 3D6B509C2334A924009A3407 /* FirstSeoul.app */;
+			productReference = 3D6B509C2334A924009A3407 /* 미세 빵빵.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3D6B50AF2334A926009A3407 /* FirstSeoulTests */ = {
@@ -442,6 +445,7 @@
 				3D6475C6233B6ADA000237FF /* Milege2Controller.swift in Sources */,
 				F8EDDEC5233CCD4300E6819D /* miseViewController.swift in Sources */,
 				3D6B50A02334A924009A3407 /* AppDelegate.swift in Sources */,
+				3D06BA922340658800819614 /* SignUp2Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +630,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dgdddfg.FirstSeoul;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "미세 빵빵";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -646,7 +650,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dgdddfg.FirstSeoul;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "미세 빵빵";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -22,7 +22,6 @@ class CarViewController: UIViewController {
     //세번째 상자
     @IBOutlet var nowTextField: UITextField!
     @IBOutlet var okButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker?.maximumDate = Date()

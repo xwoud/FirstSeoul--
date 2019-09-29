@@ -25,6 +25,7 @@ class miseViewController : UIViewController, XMLParserDelegate, UIPickerViewData
     
     var mile : Int?
     var maxmil : Int?
+    var maxmile : String = ""
     var currentElement = ""
     var b = Mise()
     var MiseInfoArr = Array<Mise>()
@@ -35,14 +36,28 @@ class miseViewController : UIViewController, XMLParserDelegate, UIPickerViewData
     override func viewDidLoad() {
         
         guPicker.delegate = self
-        progressView.value = 0
         super.viewDidLoad()
+
+        if isBeingPresented {
+        for key in UserDefaults.standard.dictionaryRepresentation().keys {
+            UserDefaults.standard.removeObject(forKey: key.description)
+        }
         
+           print("count \(UserDefaults.standard.dictionaryRepresentation().keys.count) ")
+
+             
+
+          }
         
+
+                
     }
     //progressbar animation
     override func viewWillAppear(_ animated: Bool) {
         UIView.animate(withDuration: 1.5) {
+            
+           
+        
             //carview에서 받아오는 변수 값 넣기.
             self.mile = UserDefaults.standard.value(forKey: "mile") as? Int
             self.maxmil = UserDefaults.standard.value(forKey: "max") as? Int
@@ -57,10 +72,11 @@ class miseViewController : UIViewController, XMLParserDelegate, UIPickerViewData
                 var c = Int(self.maxmil!)
                 self.progressView.maxValue = CGFloat(c)
                 self.max.text = String(c)
+                //c값이랑 mile 값
+            }
             }
             
         }
-    }
     
     // 몇개씩 보여줄지
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

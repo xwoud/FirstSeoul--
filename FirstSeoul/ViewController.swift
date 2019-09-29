@@ -14,14 +14,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var idField: UITextField!
     @IBOutlet var pwField: UITextField!
+    var mile = 0
+    var maxmil = "연평균 주행거리"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 10
-        
     }
     
+    
+
     @IBAction func login() {
         guard let idText = idField.text else {
             return
@@ -52,6 +55,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func successAlert() {
         let alertController = UIAlertController(title: nil, message: "로그인에 성공하였습니다!", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+        
+
+                    
+        
         //self.present(alertController, animated: true, completion: nil)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
